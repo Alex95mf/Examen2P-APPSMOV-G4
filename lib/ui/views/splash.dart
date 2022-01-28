@@ -29,6 +29,17 @@ class _SplashView extends State<SplashView> {
         width: double.infinity,
         height: double.infinity,
         color: AppColors.text_dark,
+        /*decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment(0.0, 1.0), // 10% of the width, so there are ten blinds.
+            colors: <Color>[
+              Color(0xFFFFFFFF),
+              Color(0xFF61BF33),
+            ], // red to yellow
+            tileMode: TileMode.repeated, // repeats the gradient over the canvas
+          ),
+        ),*/
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -49,7 +60,7 @@ class _SplashView extends State<SplashView> {
             const Text(
               "BIENVENIDO",
               style: TextStyle(
-                  fontSize: 40,
+                  fontSize: 36,
                   color: AppColors.text_light,
                   fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
