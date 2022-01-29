@@ -14,7 +14,7 @@ class _SplashView extends State<SplashView> {
   void initState() {
     super.initState();
     _delaySplash = Timer(const Duration(seconds: 3), () {
-      Navigator.of(context).pushReplacementNamed("/login");
+      Navigator.of(context).pushReplacementNamed("/home");
     });
   }
   @override

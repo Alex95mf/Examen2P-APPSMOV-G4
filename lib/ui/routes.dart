@@ -1,9 +1,12 @@
+import 'package:examen2p_appsmov_g4/ui/views/home/homeview.dart';
 import 'package:examen2p_appsmov_g4/ui/views/splash.dart';
 import 'package:flutter/material.dart';
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings){
     final args = settings.arguments;
     switch (settings.name) {
+      case '/home':
+        return MaterialPageRoute(builder: (_) => HomeView());
       case '/':
         return MaterialPageRoute(builder: (_) => SplashView());
       default:
