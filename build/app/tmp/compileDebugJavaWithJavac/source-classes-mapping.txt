@@ -1,0 +1,6 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/example/examen2p_appsmov_g4/BuildConfig.java
+ com.example.examen2p_appsmov_g4.BuildConfig
+com/example/examen2p_appsmov_g4/MainActivity.java
+ com.example.examen2p_appsmov_g4.MainActivity
