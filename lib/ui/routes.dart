@@ -1,16 +1,20 @@
-import 'package:examen2p_appsmov_g4/ui/views/home/homeview.dart';
-import 'package:examen2p_appsmov_g4/ui/views/splash.dart';
+import '/ui/views/home/homeview.dart';
+import '/ui/views/login.dart';
+import '/ui/views/splash.dart';
 import 'package:flutter/material.dart';
+
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings){
     final args = settings.arguments;
     switch (settings.name) {
-      case '/home':
-        return MaterialPageRoute(builder: (_) => HomeView());
       case '/':
         return MaterialPageRoute(builder: (_) => SplashView());
+      case '/login':
+        return MaterialPageRoute(builder: (_) => LoginScreen());
+      case '/home':
+        return MaterialPageRoute(builder: (_) => HomeView());
       default:
-//Aquí se irán agregando las rutas por cada clase dart creada.
+      //Aquí se irán agregando las rutas por cada clase dart creada.
     return _errorRoute();
   }
   }
@@ -22,7 +26,7 @@ class Routes {
           centerTitle: true,
         ),
         body: const Center(
-          child: Text("ERROR"),
+          child: Text("Página no encontrada"),
         ),
       );
     });

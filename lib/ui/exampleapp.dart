@@ -1,5 +1,5 @@
-import 'package:examen2p_appsmov_g4/constants/colors.dart';
-import 'package:examen2p_appsmov_g4/ui/routes.dart';
+import '/constants/colors.dart';
+import '/ui/routes.dart';
 import 'package:flutter/material.dart';
 
 class ExampleApp extends StatefulWidget {
@@ -7,6 +7,7 @@ class ExampleApp extends StatefulWidget {
   @override
   State<ExampleApp> createState() => _ExampleApp();
 }
+
 class _ExampleApp extends State<ExampleApp> {
   @override
   void initState() {

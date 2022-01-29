@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 //import 'package:examen2p_appsmov_g4/utils/info.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:examen2p_appsmov_g4/constants/colors.dart';
+import '/constants/colors.dart';
 
 class ForYouView extends StatefulWidget {
   const ForYouView({Key? key}) : super(key: key);
@@ -27,8 +27,9 @@ class _ForYouView extends State<ForYouView> {
               Icons.music_note,
               color: AppColors.text_light,
             ),
-            onPressed: () => Navigator.of(context)
-                .pushNamed("/home"),
+            onPressed: (){
+              //Navigator.of(context).pushNamed("/home");
+            },
           ),
         ],
         title: Text(
@@ -83,9 +84,9 @@ class _ForYouView extends State<ForYouView> {
         autoPlayInterval: Duration(seconds: 8),
       ),
       items: [
-        _carouselImage("assets/images/carousel1.jpg"),
+        /*_carouselImage("assets/images/carousel1.jpg"),
         _carouselImage("assets/images/carousel2.jpg"),
-        _carouselImage("assets/images/carousel3.jpg"),
+        _carouselImage("assets/images/carousel3.jpg"),*/
       ],
     );
   }

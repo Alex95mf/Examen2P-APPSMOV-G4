@@ -1,14 +1,17 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:examen2p_appsmov_g4/constants/colors.dart';
-import 'package:examen2p_appsmov_g4/ui/views/home/userinfo.dart';
-import 'package:examen2p_appsmov_g4/ui/views/home/spotify.dart';
-import 'package:examen2p_appsmov_g4/ui/views/home/logout.dart';
+import '/constants/colors.dart';
+import '/ui/views/home/userinfo.dart';
+import '/ui/views/home/spotify.dart';
+import '/ui/views/home/logout.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
+  const HomeView({Key? key}) : super(key: key);
+  @override
   _HomeView createState() => _HomeView();
 }
+
 class _HomeView extends State<HomeView> {
   int _currentPage = 1;
   PageController? _pageController;

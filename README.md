@@ -1,6 +1,6 @@
-# examen2p_appsmov_g4
+# exfinalpractico_g4
 
-Examen final APPSMOV G4
+Examen Final Practico Grupo 4.
 
 ## Getting Started
 

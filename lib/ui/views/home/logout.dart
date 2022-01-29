@@ -1,11 +1,13 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:examen2p_appsmov_g4/constants/colors.dart';
+import '/constants/colors.dart';
+
 class Settings extends StatefulWidget {
   const Settings({Key? key}) : super(key: key);
   @override
   _Settings createState() => _Settings();
 }
+
 class _Settings extends State<Settings> {
   @override
   void initState() {
@@ -32,7 +34,7 @@ class _Settings extends State<Settings> {
         children: [
           Expanded(flex: 1, child: _topSection()),
           Expanded(
-            flex: 2,
+            flex: 1,
             child: _profileContent(),
           ),
         ],
@@ -44,7 +46,7 @@ class _Settings extends State<Settings> {
     return ListView(
       children: [
         const SizedBox(
-          height: 45,
+          height: 25,
         ),
         Container(
             width: _size,
@@ -84,17 +86,17 @@ class _Settings extends State<Settings> {
         child: Column(crossAxisAlignment:
         CrossAxisAlignment.start, children: [
           Padding(
-            padding: const EdgeInsets.only(left: 8, right: 8,
+            padding: const EdgeInsets.only(left: 75, right: 30,
                 top: 30,bottom: 30),
             child: Row(
               children: const [
-                Text("",
+                Text("¿Desea cerrar su sesión?",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: AppColors.text_light,
                         fontSize: 16,
                         fontWeight: FontWeight.bold)),
-                Spacer(flex: 1),
+               Spacer(flex: 1),
               ],
             ),
           ),
@@ -102,19 +104,16 @@ class _Settings extends State<Settings> {
             child: _formItems(),
           ),*/
           Padding(
-            padding: const EdgeInsets.symmetric(vertical:
-            20.0),
+            padding: const EdgeInsets.symmetric(vertical: 50.0),
             child: Container(
               width: double.infinity,
               margin: EdgeInsets.only(left: 8, right: 8),
               child: ElevatedButton(
                 onPressed: () =>
-                    Navigator.of(context).pushReplacementNamed("/home"),
+                    Navigator.of(context).pushReplacementNamed("/login"),
                 style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.only(top: 16, bottom:
-                    16),
-                    textStyle: TextStyle(fontSize: 16, color:
-                    Colors.white),
+                    padding: EdgeInsets.only(top: 16, bottom: 16),
+                    textStyle: TextStyle(fontSize: 16, color: Colors.white),
                     primary: AppColors.primaryColor,
                     shape: RoundedRectangleBorder(
                         borderRadius:

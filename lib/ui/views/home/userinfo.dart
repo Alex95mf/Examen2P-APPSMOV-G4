@@ -1,14 +1,16 @@
-import 'package:examen2p_appsmov_g4/constants/colors.dart';
+import '/constants/colors.dart';
 /*import 'package:examen2p_appsmov_g4/models/filter_chip.dart';
 import 'package:examen2p_appsmov_g4/models/product.dart';
 import 'package:examen2p_appsmov_g4/utils/info.dart';*/
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 class Explore extends StatefulWidget {
   const Explore({Key? key}) : super(key: key);
   @override
   _Explore createState() => _Explore();
 }
+
 class _Explore extends State<Explore> {
   @override
   void initState() {
@@ -166,8 +168,7 @@ class FormItem extends StatelessWidget {
         decoration: InputDecoration(
             prefixIcon: Icon(Icons.person_rounded),
             labelText: label,
-            contentPadding: EdgeInsets.fromLTRB(20.0, 15.0,
-                20.0, 15.0),
+            contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
             hintText: hintText,
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(16.0))),
